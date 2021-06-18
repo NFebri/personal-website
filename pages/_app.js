@@ -1,7 +1,14 @@
 import { ChakraProvider, ColorModeProvider, useColorMode } from '@chakra-ui/react'
+import NProgress from 'nprogress';
+import Router from 'next/router';
 import customTheme from '../styles/theme'
 import { Global, css } from '@emotion/react'
 import Container from '../components/Container'
+import '../styles/nprogress.css'
+
+Router.events.on('routeChangeStart', () => NProgress.start());
+Router.events.on('routeChangeComplete', () => NProgress.done());
+Router.events.on('routeChangeError', () => NProgress.done());
 
 const GlobalStyle = ({ children }) => {
   const { colorMode } = useColorMode()

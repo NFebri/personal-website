@@ -24,7 +24,7 @@ export async function getStaticProps() {
 export default function Blogs({ blogs }) {
   console.log(blogs);
   const title = "Blog"
-  const url = `${process.env.NEXT_PUBLIC_SITE_URL}/blog`;
+  const url = `${process.env.NEXT_PUBLIC_SITE_URL}/blogs`;
   return (
     <Box minH="100vh">
       <Head>
