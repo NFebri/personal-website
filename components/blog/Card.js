@@ -20,7 +20,7 @@ const Card = ({ createdAt, slug, summary, tags, title }) => {
           spacing={4}
           p={6}
           w="full"
-          textAlign="left"
+          align="left"
           rounded="md"
           transition="all 0.2s ease-in-out"
           border="1px"
