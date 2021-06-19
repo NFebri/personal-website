@@ -22,14 +22,10 @@ export async function getStaticProps() {
 }
 
 export default function Blogs({ blogs }) {
-  console.log(blogs);
-  const title = "Blog"
+  const title = "Blog - Niko Febriyanto"
   const url = `${process.env.NEXT_PUBLIC_SITE_URL}/blogs`;
   return (
     <Box minH="100vh">
-      <Head>
-        <title>Blog - Niko Febriyanto</title>
-      </Head>
       <NextSeo title={title} canonical={url} openGraph={{ url, title }} />
 
       <Heading as="h1" mt='120px' mb="30px" textAlign="center">

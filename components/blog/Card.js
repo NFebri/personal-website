@@ -13,7 +13,7 @@ const Card = ({ createdAt, slug, summary, tags, title }) => {
     dark: "gray.700"
   }
   return (
-    <Link href={`/blog/${slug}`} passHref>
+    <Link href={`/blogs/${slug}`} passHref>
       <Container maxW="container.lg">
         <VStack
           as="article"
